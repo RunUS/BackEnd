@@ -5,14 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Mars.Entities;
+using Mars.Repository.Interfaces;
 
 namespace Mars.Services
 {
     public class FacilityService : IFacilityService
     {
+        private IRepository<Facility> facilityRepository;
+        public FacilityService(IUnitOfWork _uow)
+        {
+            facilityRepository = _uow.Repository<Facility>();
+        }
         public IEnumerable<Facility> GetFacilities()
         {
-            return new List<Facility>() { new Facility() { Id= Guid.NewGuid(), Address="shanghai", Name="xxx hospital"} }.AsEnumerable();
+            return facilityRepository.Table.AsEnumerable();
         }
     }
 }

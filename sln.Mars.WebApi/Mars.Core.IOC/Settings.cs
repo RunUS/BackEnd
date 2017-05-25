@@ -7,6 +7,8 @@ using Ninject;
 using Mars.Services.Interfaces;
 using Mars.Services;
 using Ninject.Web.Common;
+using Mars.Repository.EFCodeFirst;
+using Mars.Repository.Interfaces;
 
 namespace Mars.Core.IOC
 {
@@ -14,7 +16,12 @@ namespace Mars.Core.IOC
     {
         public static void Mapping(IKernel kernel)
         {
-            kernel.Bind<IFacilityService>().To<FacilityService>().InRequestScope();
+            //service
+            kernel.Bind<IFacilityService>().To<FacilityService>();
+
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
+            //repository
+            kernel.Bind<MarsContext>().ToSelf().InRequestScope();
         }
     }
 }

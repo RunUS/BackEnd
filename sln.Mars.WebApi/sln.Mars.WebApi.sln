@@ -12,11 +12,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars.WebApi", "Mars.WebApi\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars.Entities", "Mars.Entities\Mars.Entities.csproj", "{401667CA-8578-4939-8199-98848183BDC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars.Repository.Interfaces", "Mars.Repository.Interfaces\Mars.Repository.Interfaces.csproj", "{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}"
-	ProjectSection(ProjectDependencies) = postProject
-		{401667CA-8578-4939-8199-98848183BDC5} = {401667CA-8578-4939-8199-98848183BDC5}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars.Repository.EFCodeFirst", "Mars.Repository.EFCodeFirst\Mars.Repository.EFCodeFirst.csproj", "{B3DCC170-B01F-44D7-9CF4-892B498DB7F1}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8} = {1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}
@@ -42,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars.Core.IOC", "Mars.Core.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars.Common", "Mars.Common\Mars.Common.csproj", "{B46F4D69-B76B-4C0B-85D5-393E3D62ACC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars.Repository.Interfaces", "Mars.Repository.Interfaces\Mars.Repository.Interfaces.csproj", "{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,10 +53,6 @@ Global
 		{401667CA-8578-4939-8199-98848183BDC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{401667CA-8578-4939-8199-98848183BDC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{401667CA-8578-4939-8199-98848183BDC5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B3DCC170-B01F-44D7-9CF4-892B498DB7F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B3DCC170-B01F-44D7-9CF4-892B498DB7F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3DCC170-B01F-44D7-9CF4-892B498DB7F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -80,6 +73,10 @@ Global
 		{B46F4D69-B76B-4C0B-85D5-393E3D62ACC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B46F4D69-B76B-4C0B-85D5-393E3D62ACC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B46F4D69-B76B-4C0B-85D5-393E3D62ACC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

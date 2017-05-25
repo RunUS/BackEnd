@@ -74,7 +74,7 @@
       <Name>Mars.Repository.EFCodeFirst</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mars.Repository.Interfaces\Mars.Repository.Interfaces.csproj">
-      <Project>{1a88e441-d0b5-4f15-b3f5-41a7677d2fc8}</Project>
+      <Project>{1A88E441-D0B5-4F15-B3F5-41A7677D2FC8}</Project>
       <Name>Mars.Repository.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mars.Services.Interfaces\Mars.Services.Interfaces.csproj">

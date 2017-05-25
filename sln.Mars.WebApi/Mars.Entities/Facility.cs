@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Mars.Entities
 {
-    public class Facility
+    public class Facility : BaseEntity
     {
-        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
     }
