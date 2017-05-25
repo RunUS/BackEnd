@@ -2,4 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/sln.Mars.WebApi/Mars.WebApi/bin
+**/bin/**
+**/obj/**
+**/packages/**
