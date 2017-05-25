@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Mars.Entities;
+using Mars.Services.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,10 +11,16 @@ namespace Mars.WebApi.Controllers
 {
     public class ValuesController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        private IFacilityService FacilityService;
+        public ValuesController(IFacilityService _FacilityService)
         {
-            return new string[] { "value1", "value2" };
+            this.FacilityService = _FacilityService;
+
+        }
+        // GET api/values
+        public IEnumerable<Facility> Get()
+        {
+            return FacilityService.GetFacilities();
         }
 
         // GET api/values/5
